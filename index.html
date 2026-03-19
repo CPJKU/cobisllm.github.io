@@ -149,10 +149,109 @@
     </p>
   </div>
 
-  <h2>Materials</h2>
-  <div class="links">
-    <a href="https://your-slides-link-here.com" target="_blank">Slides</a>
-    <a href="https://github.com/CPJKU/cobisllm" target="_blank">GitHub Repository</a>
+  <h2>What You'll Learn</h2>
+  <div class="organizers-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); text-align: left;">
+    <div class="abstract-box" style="border-left: 5px solid #7a0019;">
+      <strong>🧠 Theory</strong><br>
+      The psychological roots of biases like anchoring and how they differ from "errors."
+    </div>
+    <div class="abstract-box" style="border-left: 5px solid #7a0019;">
+      <strong>🛠️ Methodology</strong><br>
+      How to adapt classic psychological experiments for LLM evaluation without losing rigour.
+    </div>
+    <div class="abstract-box" style="border-left: 5px solid #7a0019;">
+      <strong>💻 Hands-on</strong><br>
+      Live coding to detect positional and linguistic biases in multilingual models.
+    </div>
+  </div>
+
+  <h2>Program Schedule</h2>
+  <table style="width:100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+      <tr style="background-color: #003366; color: white; text-align: left;">
+        <th style="padding: 12px;">Time</th>
+        <th style="padding: 12px;">Session Topic</th>
+        <th style="padding: 12px;">Speaker</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px;">09:00 - 9:10</td>
+        <td><strong>Introduction:</strong> Introducing Tutorial Organiziners</td>
+        <td>Ralph Hertwig</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px;">09:10 - 10:00</td>
+        <td><strong>Introduction:</strong> Defining Cognitive Effects vs. Biases from Psychological Perspective</td>
+        <td>Ralph Hertwig</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">
+        <td style="padding: 12px;">10:00 - 10:30</td>
+        <td><strong>From Humans to LLMs:</strong> Mapping Psychological Experiments to LLMs</td>
+        <td>Markus Schedl</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px;">10:30 - 11:00</td>
+        <td>☕ Coffee Break</td>
+        <td>—</td>
+      </tr>
+     <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">
+        <td style="padding: 12px;">11:00 - 11:30</td>
+        <td><strong>From Humans to LLMs:</strong> Mapping Psychological Experiments to LLMs</td>
+        <td>Markus Schedl</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">
+        <td style="padding: 12px;">11:30 - 12:20</td>
+        <td><strong>Hands-on:</strong> Experimenting with Positional Effects</td>
+        <td>Antonela & Shahed</td>
+      </tr>
+     <tr style="border-bottom: 1px solid #ddd; background-color: #f9f9f9;">
+        <td style="padding: 12px;">11:30 - 12:20</td>
+        <td><strong>Final Remarks:</strong> Pitfalls and Future works</td>
+        <td>Markus & Antonella</td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 12px;">12:30 - 13:00</td>
+        <td><strong>Future Directions:</strong> Open Questions & Closing</td>
+        <td>All</td>
+      </tr>
+    </tbody>
+  </table>
+
+<h2>Materials</h2>
+
+  <div class="materials-container">
+
+    <div class="material-group">
+      <h3 style="color: #7a0019; font-size: 1.1em; margin-bottom: 10px;">📂 Tutorial Assets</h3>
+      <div class="links">
+        <a href="https://your-slides-link-here.com" target="_blank" style="background: #7a0019;">📊 Presentation Slides</a>
+        <a href="https://colab.research.google.com/" target="_blank" style="background: #2e7d32;">🐍 Google Colab Notebook</a>
+<!--        <a href="https://github.com/CPJKU/cobisllm" target="_blank" style="background: #333;">💻 GitHub Repository</a>-->
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
+
+      <div class="abstract-box" style="margin-top: 0;">
+        <h3 style="margin-top: 0; color: #003366;">🧠 Psychology Foundations</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 0.95em;">
+          <li>🔗 <a href="https://www.sciencedirect.com/science/article/pii/S1364661313002970" target="_blank">Evolution of Decision Rules</a></li>
+          <li>🔗 <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1756-8765.2008.01006.x" target="_blank">Homo Heuristicus</a></li>
+          <li>🔗 <a href="https://faculty.sites.iastate.edu/tesfatsi/archive/tesfatsi/JudgementAndChoice.MappingBoundedRationality.DKahneman2003.pdf" target="_blank">Judgement & Choice (Kahneman)</a></li>
+          <li>🔗 <a href="https://www.apa.org/pubs/journals/features/bul-bul0000324.pdf" target="_blank">Experimental Choice</a></li>
+        </ul>
+      </div>
+
+      <div class="abstract-box" style="margin-top: 0; border-left-color: #7a0019;">
+        <h3 style="margin-top: 0; color: #7a0019;">🤖 LLM & NLP Research</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 0.95em;">
+          <li>🔗 <a href="https://aclanthology.org/2025.nlp4dh-1.50/" target="_blank">Evaluation of LLMs</a></li>
+          <li>🔗 <a href="https://aclanthology.org/2025.findings-emnlp.1124/" target="_blank">Positional Bias in LLMs</a></li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 
   <h2>Organizers</h2>
