@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tutorial Title</title>
+  <title>Cognitive Effects and Biases in LLMs - EACL 2026</title>
 
   <style>
     body {
@@ -17,9 +17,10 @@
     }
 
     h1 {
-      color: #7a0019; /* Title color */
+      color: #7a0019;
       font-size: 2.4em;
       margin-bottom: 5px;
+      line-height: 1.2;
     }
 
     .venue {
@@ -53,18 +54,62 @@
       text-decoration: none;
       border-radius: 4px;
       font-weight: bold;
+      transition: background 0.3s;
     }
 
     .links a:hover {
       background: #0055aa;
     }
 
-    ul {
-      padding-left: 20px;
+    /* --- Organizers Grid Styling --- */
+    .organizers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .organizer-card {
+      text-align: center;
+    }
+
+    .organizer-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%; /* Makes it a circle */
+      object-fit: cover; /* Prevents stretching */
+      border: 3px solid #f5f7fa;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .organizer-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .organizer-card a {
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+      display: block;
+    }
+
+    .organizer-card a:hover {
+      text-decoration: underline;
+    }
+
+    .affiliation {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.3;
+      margin-top: 5px;
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 80px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
       font-size: 0.9em;
       color: #666;
       text-align: center;
@@ -74,60 +119,118 @@
 
 <body>
 
-  <!-- ===== TITLE ===== -->
   <h1>Cognitive Effects and Biases in Large Language Models</h1>
 
-  <!-- ===== VENUE / EVENT INFO ===== -->
   <div class="venue">
-    Tutorial at <strong>Conference / European Chapter of ACL 2026</strong>,
+    Tutorial at <strong>EACL 2026</strong>,
     Rabat, Morocco — March 28th, 2026
   </div>
 
-  <!-- ===== ABSTRACT ===== -->
   <h2>Abstract</h2>
   <div class="abstract-box">
     <p>
-     Cognitive effects such as anchoring, positional effect, or confirmation bias are core aspects of human decision
-        making and reasoning. As LLMs increasingly act as communicative partners, reasoning tools, and evaluators,
-        understanding how these cognitive effects influence their behavior and vice versa has become essential.
-        While recent studies have adapted psychological experiments to detect cognitive biases in LLMs, they often
-        use a particular kind of experimental setup from psychology that carries implications for human performance.
-        In addition, current NLP studies often confuse cognitive effects with biases, diverging from their psychological
-        foundations and overlooking potentially functional aspects of these phenomena.
-
-     In this tutorial, jointly organized by NLP researchers and a cognitive psychologist and decision scientist,
-        we aim to build shared conceptual and methodological ground between the two disciplines. We begin by outlining
-        how cognitive effects and biases are defined, validated, and sometimes debated within psychology,
-        highlighting differences and contradictions in experimental designs. We then bridge these insights to
-        NLP through an overview of key studies examining cognitive biases in LLMs, mapping their methodological
-        parallels and divergences. The tutorial also includes a hands-on component where participants explore the
-        challenges of detecting a single cognitive bias (e.g., positional bias) in multilingual LLMs, illustrating
-        the nuances and pitfalls of such evaluations. We conclude by discussing emerging research directions and
-        open questions at the intersection of cognitive science and large language models.
-
+     Cognitive effects such as anchoring, positional effect, or confirmation bias are core aspects of human decision making and reasoning. As LLMs increasingly act as communicative partners, reasoning tools, and evaluators, understanding how these cognitive effects influence their behavior and vice versa has become essential...
     </p>
   </div>
 
-  <!-- ===== MATERIALS ===== -->
   <h2>Materials</h2>
   <div class="links">
     <a href="https://your-slides-link-here.com" target="_blank">Slides</a>
     <a href="https://github.com/CPJKU/cobisllm" target="_blank">GitHub Repository</a>
   </div>
 
-  <!-- ===== ORGANIZERS ===== -->
   <h2>Organizers</h2>
-  <ul>
-    <li>Markus Schedl — Insitute of Computational Perception</li>
-    <li>Antonela Tommasel — Institute of Computational Perception </li>
-    <li>Shahed Masoudian — Institute of Computational Perception</li>
-    <li>Ralph Hertwig — Max Planck Institute for Human Development</li>
-  </ul>
+  <div class="organizers-grid">
 
-  <!-- ===== FOOTER ===== -->
+    <div class="organizer-card">
+      <img src="images/schedl.png" alt="Markus Schedl">
+      <a href="https:http://www.mschedl.eu/" target="_blank">Markus Schedl</a>
+      <div class="affiliation">Institute of Computational Perception</div>
+    </div>
+
+    <div class="organizer-card">
+      <img src="images/tommasel.jpg" alt="Antonela Tommasel">
+      <a href="https://hcai.at/persons/tommasel/" target="_blank">Antonela Tommasel</a>
+      <div class="affiliation">Institute of Computational Perception</div>
+    </div>
+
+    <div class="organizer-card">
+      <img src="images/masoudian.jpg" alt="Shahed Masoudian">
+      <a href="https://hcai.at/persons/masoudian/" target="_blank">Shahed Masoudian</a>
+      <div class="affiliation">Institute of Computational Perception</div>
+    </div>
+
+    <div class="organizer-card">
+      <img src="images/hertwig.png" alt="Ralph Hertwig">
+      <a href="https://www.mpib-berlin.mpg.de/mitarbeiter/ralph-hertwig" target="_blank">Ralph Hertwig</a>
+      <div class="affiliation">Max Planck Institute for Human Development</div>
+    </div>
+
+  </div>
+
   <footer>
     © 2026 COBIS LLM Tutorial — Hosted on GitHub Pages
   </footer>
 
 </body>
 </html>
+
+<!--<body>-->
+
+<!--  &lt;!&ndash; ===== TITLE ===== &ndash;&gt;-->
+<!--  <h1>Cognitive Effects and Biases in Large Language Models</h1>-->
+
+<!--  &lt;!&ndash; ===== VENUE / EVENT INFO ===== &ndash;&gt;-->
+<!--  <div class="venue">-->
+<!--    Tutorial at <strong>Conference / European Chapter of ACL 2026</strong>,-->
+<!--    Rabat, Morocco — March 28th, 2026-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; ===== ABSTRACT ===== &ndash;&gt;-->
+<!--  <h2>Abstract</h2>-->
+<!--  <div class="abstract-box">-->
+<!--    <p>-->
+<!--     Cognitive effects such as anchoring, positional effect, or confirmation bias are core aspects of human decision-->
+<!--        making and reasoning. As LLMs increasingly act as communicative partners, reasoning tools, and evaluators,-->
+<!--        understanding how these cognitive effects influence their behavior and vice versa has become essential.-->
+<!--        While recent studies have adapted psychological experiments to detect cognitive biases in LLMs, they often-->
+<!--        use a particular kind of experimental setup from psychology that carries implications for human performance.-->
+<!--        In addition, current NLP studies often confuse cognitive effects with biases, diverging from their psychological-->
+<!--        foundations and overlooking potentially functional aspects of these phenomena.-->
+
+<!--     In this tutorial, jointly organized by NLP researchers and a cognitive psychologist and decision scientist,-->
+<!--        we aim to build shared conceptual and methodological ground between the two disciplines. We begin by outlining-->
+<!--        how cognitive effects and biases are defined, validated, and sometimes debated within psychology,-->
+<!--        highlighting differences and contradictions in experimental designs. We then bridge these insights to-->
+<!--        NLP through an overview of key studies examining cognitive biases in LLMs, mapping their methodological-->
+<!--        parallels and divergences. The tutorial also includes a hands-on component where participants explore the-->
+<!--        challenges of detecting a single cognitive bias (e.g., positional bias) in multilingual LLMs, illustrating-->
+<!--        the nuances and pitfalls of such evaluations. We conclude by discussing emerging research directions and-->
+<!--        open questions at the intersection of cognitive science and large language models.-->
+
+<!--    </p>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; ===== MATERIALS ===== &ndash;&gt;-->
+<!--  <h2>Materials</h2>-->
+<!--  <div class="links">-->
+<!--    <a href="https://your-slides-link-here.com" target="_blank">Slides</a>-->
+<!--    <a href="https://github.com/CPJKU/cobisllm" target="_blank">GitHub Repository</a>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; ===== ORGANIZERS ===== &ndash;&gt;-->
+<!--  <h2>Organizers</h2>-->
+<!--  <ul>-->
+<!--    <li>Markus Schedl — Insitute of Computational Perception</li>-->
+<!--    <li>Antonela Tommasel — Institute of Computational Perception </li>-->
+<!--    <li>Shahed Masoudian — Institute of Computational Perception</li>-->
+<!--    <li>Ralph Hertwig — Max Planck Institute for Human Development</li>-->
+<!--  </ul>-->
+
+<!--  &lt;!&ndash; ===== FOOTER ===== &ndash;&gt;-->
+<!--  <footer>-->
+<!--    © 2026 COBIS LLM Tutorial — Hosted on GitHub Pages-->
+<!--  </footer>-->
+
+<!--</body>-->
+<!--</html>-->
